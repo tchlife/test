@@ -65,6 +65,7 @@ void Usart_init(void)
 	USART_Init(DEBUG_USARTx, &USART_InitStructure);
 	
 	Interrupt_init();
+	
 	USART_ITConfig(DEBUG_USARTx, USART_IT_RXNE, ENABLE);
 	USART_Cmd(DEBUG_USARTx, ENABLE);
 }
