@@ -31,11 +31,11 @@
 #define  FLASH_SPI_CS_LOW()             GPIO_ResetBits(SPI_CS_PORT, SPI_CS_PIN)
 #define  FLASH_SPI_CS_HIGH()            GPIO_SetBits(SPI_CS_PORT, SPI_CS_PIN)
 
-/*µÈ´ý³¬Ê±Ê±¼ä*/
+/*ï¿½È´ï¿½ï¿½ï¿½Ê±Ê±ï¿½ï¿½*/
 #define  SPIT_FLAG_TIMEOUT         ((uint32_t)0x1000)
 #define  SPIT_LONG_TIMEOUT         ((uint32_t)(10 * SPIT_FLAG_TIMEOUT))
 
-/*ÐÅÏ¢Êä³ö*/
+/*ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½*/
 #define FLASH_DEBUG_ON         1
 
 #define FLASH_INFO(fmt,arg...)           printf("<<-FLASH-INFO->> "fmt"\n",##arg)
